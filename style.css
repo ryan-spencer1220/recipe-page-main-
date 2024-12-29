@@ -1,0 +1,145 @@
+:root {
+  --var-white: hsl(0, 0%, 100%);
+  --var-stone-100: hsl(30, 54%, 90%);
+  --var-stone-150: hsl(30, 18%, 87%);
+  --var-stone-600: hsl(30, 10%, 34%);
+  --var-stone-900: hsl(24, 5%, 18%);
+  --var-brown-800: hsl(14, 45%, 36%);
+  --var-rose-50: hsl(330, 100%, 98%);
+  --var-rose-800: hsl(332, 51%, 32%);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: "Outfit", serif;
+  color: var(--var-stone-600);
+  background-color: var(--var-stone-100);
+}
+
+main {
+  width: 100%;
+  max-width: 40rem;
+  background-color: var(--var-white);
+  border-radius: 1rem;
+  padding: 1rem;
+  margin-top: 4rem;
+}
+
+section {
+  margin: 0.75rem;
+}
+
+.header-container {
+  display: flex;
+}
+
+#header-img {
+  background-image: url("./assets/images/image-omelette.jpeg");
+  background-size: cover;
+  border-radius: 1rem;
+  width: 100%;
+  height: 15rem;
+  margin: 1rem;
+}
+
+h1 {
+  font-family: "Young Serif", serif;
+  font-size: 2rem;
+  margin: 2rem 0;
+}
+
+h2 {
+  font-family: "Young Serif", serif;
+  font-size: 1.75rem;
+  margin: 1.6rem 0;
+  color: var(--var-brown-800);
+}
+
+.intro {
+  margin: 1.8rem 0;
+  line-height: 1.4em;
+}
+
+.prep-container {
+  background-color: var(--var-rose-50);
+  padding: 1.1rem;
+  border-radius: 0.75rem;
+  margin: 2rem 0;
+  list-style: circle;
+}
+
+.prep-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+  color: var(--var-rose-800);
+}
+
+.prep-container li::marker {
+  color: var(--var-rose-800);
+}
+
+ol li::marker {
+  color: var(--var-rose-800);
+}
+
+li {
+  margin: 1rem;
+  margin-left: 2rem;
+  line-height: 1.4rem;
+  padding-left: 20px;
+}
+
+ul > li {
+  list-style: disc;
+}
+
+ol > li {
+  list-style: decimal;
+}
+
+strong {
+  font-weight: 700;
+}
+
+table {
+  width: 100%;
+  margin: 2rem 0;
+}
+
+td {
+  padding: 1rem 1rem 1rem 2rem;
+}
+
+tr {
+  border-bottom: 1px solid var(--var-stone-150);
+}
+
+td:nth-child(even) {
+  color: var(--var-brown-800);
+  font-weight: 600;
+}
+
+@media (max-width: 600px) {
+  body {
+    background-color: var(--var-white);
+    display: block;
+  }
+
+  main {
+    margin: 0;
+    padding: 0;
+  }
+
+  #header-img {
+    border-radius: 0;
+    margin: 0;
+  }
+
+  section {
+    margin: 2rem;
+  }
+}
