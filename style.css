@@ -123,6 +123,12 @@ td:nth-child(even) {
   font-weight: 600;
 }
 
+hr {
+  border-color: var(--var-stone-600);
+  opacity: 0.1;
+  margin: 2rem 1rem;
+}
+
 @media (max-width: 600px) {
   body {
     background-color: var(--var-white);
