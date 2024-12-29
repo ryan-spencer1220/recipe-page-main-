@@ -25,11 +25,15 @@ main {
   background-color: var(--var-white);
   border-radius: 1rem;
   padding: 1rem;
-  margin-top: 4rem;
+  margin: 4rem 0rem;
 }
 
 section {
   margin: 0.75rem;
+}
+
+section:last-child {
+  margin-bottom: 0;
 }
 
 .header-container {
@@ -107,7 +111,6 @@ strong {
 
 table {
   width: 100%;
-  margin: 2rem 0;
 }
 
 td {
@@ -116,6 +119,10 @@ td {
 
 tr {
   border-bottom: 1px solid var(--var-stone-150);
+}
+
+tr:last-child {
+  border: none;
 }
 
 td:nth-child(even) {
